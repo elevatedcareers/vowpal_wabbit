@@ -18,6 +18,12 @@ Alternatively, the very latest version is available here:
 ```
 git clone git://github.com/JohnLangford/vowpal_wabbit.git
 ```
+11/11/20 -- update
+- Need to make the vw_jni.lib.
+- Go to vowpal_wabbit/java/ and run the makefile
+- Requires that libboost-program-options.so.1.54.0 be installed:
+- To install it: apt-get install libboost1.54-all-dev
+- If the dependency is not met, vw_jni will complain
 
 You should be able to build it on most systems with:
 make
